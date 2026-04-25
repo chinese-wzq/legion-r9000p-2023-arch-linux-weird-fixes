@@ -1,2 +1,19 @@
-# legion-r9000p-2023-arch-linux-weird-fixes
-拯救者 R9000P 2023 + Arch Linux 游戏性能异常修复：睡眠唤醒解决波动 / 强制 TSC 时钟解决帧数下降。 / Fixes for weird game performance issues: suspend/resume for erratic FPS, force TSC clocksource for low average FPS.
+# Legion R9000P 2023 + Arch Linux 奇怪问题修复集
+
+记录本人在拯救者 R9000P 2023 上使用 Arch Linux 时遇到的奇怪性能问题及临时解决方法。
+
+## 问题一：游戏性能异常波动
+
+- **现象**：游戏帧数忽高忽低，卡顿明显，但重启游戏或系统后仍存在。
+- **解决方法**：将笔记本电脑**睡眠**，然后**唤醒**，性能即可恢复正常。
+
+## 问题二：游戏平均帧数下降
+
+- **现象**：整体平均帧数偏低，比正常水平低 10%~20%，且睡眠唤醒无效。
+- **解决方法**：强制系统使用 **TSC** 作为时钟源。
+
+适用硬件
+
+· 联想拯救者 Legion R9000P 2023（AMD Ryzen 9 7945HX + NVIDIA RTX 4060）
+
+欢迎补充更多“玄学”问题及解决方法
